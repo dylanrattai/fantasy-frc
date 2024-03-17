@@ -1,14 +1,13 @@
 import { Paper } from "@mantine/core";
-import ParagraphBodyComponent from "./ParagraphBodyComponent";
+import ScoringTableComponent from "./ScoringTableComponent";
 import ParagraphTitleComponent from "./ParagraphTitleComponent";
 import classes from "./ParagraphBoxComponent.module.css";
 
 interface Props {
   title: string;
-  body: string;
 }
 
-export default function ParagraphBoxComponent(props: Props) {
+export default function TableBoxComponent(props: Props) {
   return (
     <div
       style={{
@@ -20,7 +19,7 @@ export default function ParagraphBoxComponent(props: Props) {
     >
       <Paper withBorder radius="10px" className={classes.card}>
         <ParagraphTitleComponent title={props.title} />
-        <ParagraphBodyComponent body={props.body} />
+        <ScoringTableComponent />
       </Paper>
     </div>
   );
