@@ -1,0 +1,21 @@
+.card {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    padding: var(--mantine-spacing-xl);
+    padding-left: calc(var(--mantine-spacing-xl) * 2);
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: rem(15px);
+      background-image: linear-gradient(
+        0,
+        #0066B3,
+        #ED1C24
+      );
+    }
+  }
